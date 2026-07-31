@@ -1,8 +1,25 @@
 aid: observeit-proofpoint
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/observeit-proofpoint.png
 name: ObserveIT (Proofpoint)
-description: 'ObserveIT (Proofpoint) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'ObserveIT was an insider threat management (ITM) vendor acquired by Proofpoint in
+  2019 and folded into the Proofpoint Insider Threat Management product line within Proofpoint''s
+  Information Protection portfolio. The platform provides endpoint visibility, user activity
+  monitoring, session timelines, and data-loss detection across careless, malicious, and compromised
+  users, correlating activity across endpoints, email, and cloud. Integration is delivered through
+  webhooks that let SIEM and SOAR tools ingest alerts and automated exports to customer-owned AWS
+  S3 storage; ObserveIT no longer operates as a standalone brand and publishes no public developer
+  portal, OpenAPI specification, or self-service API documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/observeit-proofpoint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai Infrastructure
+- Security
+- Insider Threat Management
+- Data Loss Prevention
+- Cybersecurity
+- Endpoint Monitoring
+- Proofpoint
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/observeit-proofpoint-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/observeit-proofpoint-domain-security.yml
 - type: Website
   url: https://www.proofpoint.com/us/observeit-is-now-proofpoint
+- type: Security
+  url: https://www.proofpoint.com/us/security
+- type: PrivacyPolicy
+  url: https://www.proofpoint.com/us/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.proofpoint.com/us/legal/license
+- type: Blog
+  url: https://www.proofpoint.com/us/blog
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
